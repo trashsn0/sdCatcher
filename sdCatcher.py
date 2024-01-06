@@ -45,7 +45,8 @@ def copy_with_progress(src, dst):
 
 def clipManager() :
     if not checkVolume() :
-        return False
+	    print("Volume not attached")
+	    return False
     
     try :
         for clip in os.listdir(checkVolume()) :

@@ -1,0 +1,20 @@
+{
+    "sdCards": [
+      {
+        "name": "ZV1",
+        "sourcePath": "/Volumes/ZV1/PRIVATE/M4ROOT/CLIP/",
+        "destinationPath": "/Users/yehdar/Pictures/TEST/CLIPS/",
+        "type": "video",
+        "format": ".mp4"
+      },
+      {
+        "name": "ZV1",
+        "sourcePath": "/Volumes/ZV1/DCIM/100MSDCF/",
+        "destinationPath": "/Users/yehdar/Pictures/TEST/PICS/",
+        "type": "photo",
+        "format": ".jpg"
+      }
+    ],
+    "showDialog" : "true"
+  }
+  

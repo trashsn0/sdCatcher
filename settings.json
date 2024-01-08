@@ -3,14 +3,14 @@
       {
         "name": "ZV1",
         "sourcePath": "/Volumes/ZV1/PRIVATE/M4ROOT/CLIP/",
-        "destinationPath": "/Users/yehdar/Pictures/TEST/CLIPS/",
+        "destinationPath": "/Users/yehdar/Pictures/ZV1/CLIPS/",
         "type": "video",
         "format": ".mp4"
       },
       {
         "name": "ZV1",
         "sourcePath": "/Volumes/ZV1/DCIM/100MSDCF/",
-        "destinationPath": "/Users/yehdar/Pictures/TEST/PICS/",
+        "destinationPath": "/Users/yehdar/Pictures/ZV1/PICS/",
         "type": "photo",
         "format": ".jpg"
       }

@@ -2,40 +2,35 @@ import opsys,settings
 
 
 def main() :
-    
+    mappings = settings.checkVolume()
+
     try :    
-
-        mappings = settings.checkVolume()
-
-
         ### SD card not plugged
-    
         if not mappings :
             print("Volume not attached")
-            opsys.volumeNotFound()
             return False
         
+        
         ### SD card plugged 
-        
-        
-        if settings.showDialog() :
-            userInterraction = opsys.dialog(mappings) 
-            
-            if not userInterraction :
-                print ("User declined")
-                return False
-            
-            if userInterraction == "button returned:Sync Photos" :
-                opsys.execute(True,False,mappings)
+        else :                                       
+            if settings.showDialog() :
+                userInterraction = opsys.dialog(mappings) 
+                
+                if not userInterraction :
+                    print ("User declined")
+                    return False
+                
+                if userInterraction == "button returned:Sync Photos" :
+                    opsys.execute(True,False,mappings)
 
-            elif userInterraction == "button returned:Sync Videos" :
-                opsys.execute(False,True,mappings)
+                elif userInterraction == "button returned:Sync Videos" :
+                    opsys.execute(False,True,mappings)
 
-            elif userInterraction == "button returned:Sync Both" :
+                elif userInterraction == "button returned:Sync Both" :
+                    opsys.execute(True,True,mappings)
+
+            else :
                 opsys.execute(True,True,mappings)
-
-        else :
-            opsys.execute(True,True,mappings)
                 
         
     
@@ -46,7 +41,5 @@ def main() :
 
 
 
-if __name__ == '__main__' :
-
-    main()
+main()
     

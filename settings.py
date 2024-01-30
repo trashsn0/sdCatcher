@@ -2,7 +2,6 @@ import os
 import json
 
 ### Returns a dict object containing the current content of settings.json ###
-
 def load():
     try:
         # Get the absolute path of the directory where this script is located
@@ -27,7 +26,7 @@ def checkVolume() :
     result = []
     
     try :
-        for mapping in settings["sdCards"] :
+        for mapping in settings["mappings"] :
             if os.path.exists(mapping["sourcePath"]) :
                 result.append(mapping)
         

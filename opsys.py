@@ -8,8 +8,6 @@ from tqdm import tqdm
 
 
 
-
-
 ####################################               Cross-platform functions                 #################################
 
 

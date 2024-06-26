@@ -10,11 +10,6 @@ from tqdm import tqdm
 
 ####################################               Cross-platform functions                 #################################
 
-def isRoot() :
-    if os.geteuid != 0 :
-        show_notification("You must be root to run this script")
-        return False
-    return True
 
 def getPlatform() :
     return platform.system()
